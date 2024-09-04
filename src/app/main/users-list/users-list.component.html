@@ -1,0 +1,10 @@
+@if (users$ | async; as users) {
+    <div class="users-list">
+        @for (user of users; track user.id) {
+            <div class="book">
+                <span>{{ user.firstName }}</span>
+                <span>{{ user.lastName }}</span>
+            </div>
+        }
+    </div>
+}
